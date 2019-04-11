@@ -2,6 +2,6 @@ class Person
   
 
   def initialize(hash)
-    @hash = hash
+    hash.each {|k, v| "#{k}=", value}
   end
 end
