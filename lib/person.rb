@@ -1,8 +1,8 @@
 require 'pry'
 class Person
 
-  def initialize(hash)
+  def initialize(attributes)
     binding.pry
-    hash.each {|k, v| self.send("#{k}=", v)}
+    attributes.each {|k, v| self.send("#{k}=", v)}
   end
 end
